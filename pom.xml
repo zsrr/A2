@@ -6,7 +6,7 @@
 
     <groupId>com.stephen</groupId>
     <artifactId>a2</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <description>A2大姐姐是我的！</description>
 
@@ -17,8 +17,8 @@
 
     <build>
         <finalName>a2</finalName>
-        <outputDirectory>classes</outputDirectory>
-        <testOutputDirectory>classes</testOutputDirectory>
+        <outputDirectory>${basedir}/classes</outputDirectory>
+        <testOutputDirectory>${basedir}/classes</testOutputDirectory>
     </build>
 
     <dependencies>

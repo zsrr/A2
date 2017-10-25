@@ -1,6 +1,5 @@
 package com.stephen.a2.authorization;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
@@ -14,7 +13,6 @@ public class TokenManagerImpl implements TokenManager {
 
     private final int lastTime;
 
-    @Autowired
     public TokenManagerImpl(JedisPool jedisPool, String suffix, int lastTime) {
         this.jedisPool = jedisPool;
         this.suffix = suffix;
